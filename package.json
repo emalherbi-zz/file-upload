@@ -1,0 +1,8 @@
+{
+  "name": "FileUpload",
+  "version": "3.0.0",
+  "description": "FileUpload",
+  "main": "src/index.html",
+  "author": "emalherbi",
+  "license": "MIT"
+}

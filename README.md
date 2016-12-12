@@ -1,2 +1,3 @@
 # file-upload
-File upload (HTML/JS/PHP)
+
+File Upload (HTML / JS / PHP).

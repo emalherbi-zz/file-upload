@@ -4,12 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap</title>
-
-    <!-- Bootstrap -->
-    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-
+    <title>File Upload</title>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,11 +13,22 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!--<script src="js/bootstrap.min.js"></script>-->
+    <h1>File Upload!</h1>
+    <form action="javascript:submitForm()">
+      <input id="input-file-upload" name="input-file-upload" type="file"/>
+      <input type="submit" value="Send"/>
+    </form>
+    <script src="file-upload.js"></script>
+    <script>
+      function submitForm() {
+        var inputName = "input-file-upload";
+        var types = "txt | doc | docx";
+        //
+        fileUpload(inputName, types, function(fileName) {
+          console.log(fileName);
+          alert('Success!');
+        });
+      }
+    </script>
   </body>
 </html>
