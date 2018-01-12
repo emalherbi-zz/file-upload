@@ -1,5 +1,5 @@
 {
-  "name": "FileUpload",
+  "name": "fileupload",
   "version": "3.0.0",
   "description": "FileUpload",
   "main": "src/index.html",
